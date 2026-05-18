@@ -8,9 +8,9 @@ int main() {
     for(int i = 0; i<n; i++){
         cin >> str[i];
     }
-    for(int i = 0; i<n; i++){
-        len += str[i].length();
-        if(str[i][0] == 'a') isA++;
+    for(auto st : str){
+        len += st.length();
+        if(st[0] == 'a') isA++;
     }
     cout << len << " " << isA;
     return 0;
